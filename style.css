@@ -1,0 +1,19 @@
+.w3-bar-item w3-button{
+color: #000000
+margin-right: 50px;
+text-decoration: none;
+display: inline-block;
+}
+
+.w3-bar-item w3-button::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000000;
+    transition: width .3s;
+}
+
+.w3-bar-item w3-button:hover::after{
+    width: 100%;
+}
